@@ -1,9 +1,12 @@
 <div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
+  <h2>Random Assemblage of Things</h2>
+  <p>Below is a potentially incomplete list of Things, as some Things may be hidden by <a href="#/featureFlags">feature flags</a>.</p>
   <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
+      <li ng-show="flags.on('ornaments')">ornaments</li>
+      <li ng-show="flags.on('tacos')">tacos</li>
+      <li ng-show="flags.on('broken heart')">broken heart</li>
+      <li ng-show="flags.on('caulk')">caulk</li>
+      <li ng-show="flags.on('The French')">The French</li>
+      <li ng-show="flags.on('triple grande half-caff latte')">triple grande half-caff latte</li>
   </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
 </div>
